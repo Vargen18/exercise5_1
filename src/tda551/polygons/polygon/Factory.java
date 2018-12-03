@@ -24,4 +24,44 @@ public class Factory {
     public Rectangle createRectangle(Point p){
         return createRectangle((int) p.getX(), (int) p.getY());
     }
+
+    public Triangle createTriangle(int x, int y, int width, int height){
+        Triangle createdTriangle = new Triangle(x,y);
+        //Possibly do cool stuff, then
+        return createdTriangle;
+    }
+
+    public Triangle createTriangle(Point p, int width, int height){
+        return createTriangle((int) p.getX(), (int) p.getY(), width, height);
+    }
+
+    public Triangle createTriangle(int x, int y){
+        Triangle createdTriangle = new Triangle(x,y);
+        //Possibly do cool stuff, then
+        return createdTriangle;
+    }
+
+    public Triangle createTriangle(Point p){
+        return createTriangle((int) p.getX(), (int) p.getY());
+    }
+
+    public Square createSquare(int x, int y, int width, int height){
+        Square createdSquare = new Square(x,y);
+        //Possibly do cool stuff, then
+        return createdSquare;
+    }
+
+    public Square createSquare(Point p, int width, int height){
+        return createSquare((int) p.getX(), (int) p.getY(), width, height);
+    }
+
+    public Square createSquare(int x, int y){
+        Square createdSquare = new Square(x,y);
+        //Possibly do cool stuff, then
+        return createdSquare;
+    }
+
+    public Square createSquare(Point p){
+        return createSquare((int) p.getX(), (int) p.getY());
+    }
 }
