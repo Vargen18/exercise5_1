@@ -3,7 +3,7 @@ package tda551.polygons.polygon;
 import java.awt.*;
 
 public class Triangle extends tda551.polygons.polygon.Polygon {
-    public Triangle(int x, int y) {
+    Triangle(int x, int y) {
         super(x,y);
     }
 

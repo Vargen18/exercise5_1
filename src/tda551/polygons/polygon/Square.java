@@ -3,7 +3,7 @@ package tda551.polygons.polygon;
 import java.awt.*;
 
 public class Square extends tda551.polygons.polygon.Polygon {
-    public Square(int x, int y) {
+    Square(int x, int y) {
         super(x,y);
     }
 

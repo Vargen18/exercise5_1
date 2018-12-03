@@ -3,7 +3,7 @@ package tda551.polygons.polygon;
 import java.awt.*;
 
 public class Rectangle extends tda551.polygons.polygon.Polygon {
-    public Rectangle(int x, int y) {
+    Rectangle(int x, int y) {
         super(x,y);
     }
 
