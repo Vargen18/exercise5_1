@@ -3,10 +3,23 @@ package tda551.polygons.polygon;
 import java.awt.*;
 import java.awt.geom.Point2D;
 
-public class Factory {
+public abstract class Factory {
 
-    public Rectangle createRectangle(int x, int y, int width, int height){
-        Rectangle createdRectangle = new Rectangle(x,y);
+    private class genericClass<T>{
+        int x;
+        int y;
+        int width;
+        int height;
+        genericClass(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+    public <T extends Polygon> T createRectangle(int x, int y, int width, int height){
+        T t;
+        t = new T(x,y);
+        T createdPoly = new genericClass<T>(x,y);
         //Possibly do cool stuff, then
         return createdRectangle;
     }
